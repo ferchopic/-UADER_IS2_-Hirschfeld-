@@ -8,21 +8,48 @@
 import sys
 
 
-def factorial(num): 
-    if num < 0: 
+def factorial(num):
+    if num < 0:
         print("Factorial de un número negativo no existe")
-    elif num == 0: 
+    elif num == 0:
         return 1
-    else: 
+    else:
         fact = 1
-        while(num > 1): 
-            fact *= num 
+        while(num > 1):
+            fact *= num
             num -= 1
-        return fact 
+        return fact
+
+
+def calcular_factoriales(rango):
+    if '-' in rango:
+        inicio, fin = map(int, rango.split('-'))
+    else:
+        inicio = int(rango)
+        fin = 60 if 'hasta' in rango else 1
+    for i in range(inicio, fin + 1):
+        print("Factorial", i, "! es", factorial(i))
+
 
 if len(sys.argv) == 1:
-    num = int(input("Por favor, ingrese un número para calcular su factorial: "))
+    rango = input("Por favor, ingrese el rango en formato 'desde-hasta', 'desde-', o '-hasta' para calcular los factoriales: ")
 else:
-    num = int(sys.argv[1])
+    rango = sys.argv[1]
 
-print("Factorial", num, "! es", factorial(num)) 
+calcular_factoriales(rango)
+
+''' Realice una modificación al programa para que si se omite el número como
+argumento lo solicite. Pruebe. Sincronice en GitHub.'''
+
+''' Modifique el argumento (y el ingreso manual) para aceptar números en el rango
+desde-hasta (ej. 4-8) y que calcule los factoriales entre ambos extremos. Pruebe.
+Sincronice en GitHub.'''
+
+''' Modifique el argumento (y el ingreso manual) para que acepte rangos sin límite
+inferior “-hasta” calculando entre 1 y el número indicado (ejemplo “-10”), lo
+mismo para “desde-“ calculando entre el número indicado y 60. Tenga la
+precaución de transformar las cadenas de caracteres de la especificación de
+argumentos en valores enteros antes de intentar operaciones matemáticas.
+Pruebe. Sincronice en GitHub.'''
+
+'''Agregue comentarios al código generado. Pruebe. Sincronice con GitHub.'''
