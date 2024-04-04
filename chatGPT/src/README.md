@@ -1,0 +1,28 @@
+`# multimetric ` 
+"min": {
+      "comment_ratio": 27.285,
+      "cyclomatic_complexity": 5,
+      "fanout_external": 2,
+      "fanout_internal": 0,
+      "halstead_bugprop": 0.525,
+      "halstead_difficulty": 24.298,
+      "halstead_effort": 38253.319,
+      "halstead_timerequired": 2125.184,
+      "halstead_volume": 1574.335,
+      "loc": 67,
+      "maintainability_index": 63.454,
+      "operands_sum": 133,
+      "operands_uniq": 52,
+      "operators_sum": 123,
+      "operators_uniq": 19,
+      "pylint": 100.0,
+      "tiobe": 91.0,
+      "tiobe_compiler": 100.0,
+      "tiobe_complexity": 40.0,
+      "tiobe_coverage": 100.0,
+      "tiobe_duplication": 100.0,
+      "tiobe_fanout": 100.0,
+      "tiobe_functional": 100.0,
+      "tiobe_security": 100.0,
+      "tiobe_standard": 100.0
+    }

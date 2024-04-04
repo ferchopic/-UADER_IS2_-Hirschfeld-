@@ -18,3 +18,4 @@ Las listas numeradas se crean utilizando el número seguido de un paréntesis.
 ![Imagen](https://worldcampus.saintleo.edu/img/article/ventajas-informatica-empresas.webp)
 
 [Tp2Arquitectura](https://concepto.de/wp-content/uploads/2015/08/informatica-1-e1590711788135.jpg)
+
